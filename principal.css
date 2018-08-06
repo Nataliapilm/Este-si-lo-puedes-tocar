@@ -1,0 +1,135 @@
+body{
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+}
+@media screen and (max-width: 500px){
+	body{
+		background-color: red;
+	}
+
+}
+
+#contenedorLogo{
+	border:1px solid red;	
+}
+
+#logo{
+	width: 10%;
+	height: 10%;
+	min-height: 150px;
+	min-width: 150px;
+	margin-right: 10px;
+}
+#letrero{
+	position:relative;	
+	
+}
+#letrero *{
+	display: inline-block;
+}
+h1{
+	position: absolute;
+	margin:0;
+	top:30%;		
+}
+h2{
+	display: block;
+}
+
+nav{
+	width:100%;
+	background: #157BBC;
+	left:0;
+}
+nav ul{
+	padding:0px;
+	margin:0px;
+}
+li{
+	display: inline-block;
+	margin: 7px -2px;
+}
+a{
+	text-decoration: none;
+	color:white;
+	font-weight: bold;
+	padding: 2px 10px;
+	
+}
+
+li a:focus{
+	border-bottom: 5px solid #7AD2FF;
+}
+
+li:hover{
+	animation: 0.7s pulse 1;
+	
+}
+
+
+@keyframes pulse {
+  0% ,100% {  
+    transform: scale(1);
+  }
+
+  50% {    
+    transform: scale(1.3);
+  }
+
+ 
+}
+/*
+ <div clase="clase1  clase2">
+*/
+parte#id{
+
+}
+.clase{
+
+}
+
+/* Secuencia directa*/
+p+p{
+
+}
+/* Contenidos directamente p en div */
+div > p{
+
+}
+/*secuencia indirecta */
+p~p{
+
+}
+
+/*atributo*/
+h6[title]{
+
+}
+h2[title~="contienvalor"]{
+
+}
+/* lang="es-ES"*/
+
+h2[title|="es"]{
+
+}
+
+
+
+
+/* color: red !important; forza */
+/*
+display= 
+	hidden; desaparece el objeto
+	block; ocupa todo el espacio horizontal del padre
+	inline; todos sus hermanos ocupan un renglon adaptable
+	inline-block; ocupa varios reglones junto a hermanos	
+position=
+	Absolute , primera herencia con relative
+	relative , respecto al padre
+	fixed , respecto a la ventana
+	z-index= 2; entre mayor mas adelante 
+overflow=hiden; desaparece lo que desborda
+visility=
+	hidden; no aparece pero continua su espacio
+*/
