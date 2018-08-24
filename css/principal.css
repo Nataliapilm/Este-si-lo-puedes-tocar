@@ -25,11 +25,7 @@ h2{
 	text-align: center;
 }
 
-section{
-	width:90%;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 
 nav{	
 	background: #157BBC;	
@@ -45,7 +41,7 @@ li{
 	margin-right: 15px;
 	font-size: 30px;
 }
-a{
+nav a{
 	text-decoration: none;
 	color:white;
 	font-weight: bold;
@@ -60,26 +56,50 @@ li:hover{
 	animation: 0.7s pulse 1;
 	
 }
+section,footer,h3{
+	width:90%;	
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px orange solid;
+}
+section{
+	height: 800px;
+	display: flex;	
+}
 
 h3{
+	margin: 10px auto 10px auto;
 	font-size: 40px;
-
+	border: 1px solid #1197F5;
 }
 
 article,aside{
-	display: inline-block;
+	margin: 10px;
 	font-size: 30px;
 	border: solid 1px green;
 }
+
+
 article{
 	position: relative;	
 	width: 70%;	
 	vertical-align: top;
 }
 aside{
-	
+	position: relative;
+	height: 50%;	
 }
 
+footer{
+	text-align: center;
+	border: 1px solid #D91BE5;
+}
+
+footer{
+	margin:10px auto 10px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 
 
@@ -108,10 +128,6 @@ aside{
 /*
  <div clase="clase1  clase2">
 */
-parte#id{
-
-}
-.clase{
 
 }
 
