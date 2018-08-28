@@ -1,5 +1,6 @@
 
 function openModal(e) {
+	document.getElementById("preview").src=e.src;
   document.getElementById('myModal').style.display = "block";
   showSlides(e);
 }
