@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title> Galeria | Apia Proyectos
+	</title>
+	<link rel="icon" type="image/png" sizes=16x16 href="../media otros/logoApia.png" />
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/principal.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="../css/lbox.css">
+	<style type="text/css">
+		section{
+			height: auto;				
+		}
+		article{			
+			width: auto !important;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		article img{
+			width: 33%;
+			min-width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<header>		
+	<div id="letrero">				
+		<h1> Apia Proyectos y Soluciones S.A.S.</h1>
+		<img id=logo src="../media otros/logoApia.png">
+	</div>	
+		
+	<nav>
+		<ul>
+			<li><a href="../index.html">Inicio
+			</a><li>
+			<li><a href="">Galeria
+			</a></li>
+			<li><a href="#">Contacto
+			</a></li>		
+		</ul>
+	</nav>
+	</header>	
+	<h3>Galeria</h3>
+	<section id="uno">		
+		<article>
+			<div id="Maquina blanca">
+				<h5>Maquina Blanca</h5>
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 1" onclick="openModal(this)" class="hover-shadow cursor">
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 2" onclick="openModal(this)" class="hover-shadow cursor">
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 3" onclick="openModal(this)" class="hover-shadow cursor">
+			</div>	
+			<div id="Maquina blanca">
+				<h5>Maquina Blanca 2</h5>
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 1" onclick="openModal(this)" class="hover-shadow cursor">
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 2" onclick="openModal(this)" class="hover-shadow cursor">
+				<img src="../fotos/Maquinaria/ro-04.jpg" alt="maquina en neblina 3" onclick="openModal(this)" class="hover-shadow cursor">
+			</div>				
+		</article>		
+	</section>
+	<div id="myModal" class="modal" onclick="closeModal()">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+	    <div class="mySlides" id="principal">      
+	      <img src="../fotos/Maquinaria/ro-04.jpg"  style="width:100%">
+	    </div>
+	    <div class="caption-container">
+	      <p id="caption">aaa</p>
+	    </div>
+	  </div>
+	</div>
+	<footer>
+		<div id="redes">
+			<a href="">link 1</a>
+			<a href="">link 2</a>
+		</div>		
+	</footer>
+<script src="../js/lbox.js"></script>	
+</body>
+</html>
