@@ -39,21 +39,15 @@
   text-decoration: none;
   cursor: pointer;
 }
-
 .mySlides {
   display: none;
 }
-
 .cursor {
   cursor: pointer;
 }
-
-
-
-img {
+#myModal img {
   margin-bottom: -4px;
 }
-
 .caption-container {
   text-align: center;
   background-color: black;
@@ -61,11 +55,10 @@ img {
   color: white;
 }
 
-.
 img.hover-shadow {
   transition: 0.3s;
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.3), 0 16px 26px 0 rgba(0, 0, 0, 0.19);
 }
