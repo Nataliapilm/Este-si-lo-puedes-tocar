@@ -8,14 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/principal.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="../css/lbox.css">	
-	<style type="text/css">	
+	<style type="text/css">		
 		* {
-		    box-sizing: border-box;
-		}	
-		article{
-			width: 100%;
-			height: 900px;
-			
+		    box-sizing: border-box;		  
+		}			
+		article{	
+			width: 100%;		
+			height: 1020px;			
 		}	
 		#collage{
 			display: flex;
@@ -27,15 +26,18 @@
 		.column{
 			flex:50%;
 			max-width: 50%;
-			padding: 0;
-		}		
-	
+			padding: 0;			
+		}			
 		.column img{
 			width: 100%;
-			vertical-align: middle;
+			vertical-align: middle;						
+			transition: all 1s ease;			
 		}
-		
+		.column img:hover{			
+		 	transform: scale(1.3);
+		}		
 		.album{
+			overflow: hidden;
 			position: relative;
 		}
 		.album p{
@@ -44,19 +46,18 @@
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    color:white;
+		    z-index: 1;
 		    padding: 10px;
 		    background-color: rgba(0,0,0,0.5);
 		}
 		#last{
 			top: 100px;
-			transform: translate(-50%, -50%);
-		}
-
+			
+		}		
 		
 	</style>
 </head>
-<body>
-	
+<body style="opacity: 0">	
 	<header>		
 	<div id="letrero">					
 		<h1> Apia Proyectos y Soluciones S.A.S.</h1>
@@ -70,13 +71,13 @@
 		</ul>
 	</nav>
 	</header>		
-	<h3>Galeria</h3>
+	<h2>Galeria</h2>
 	<section id="uno">			
 		<article id="collage">
 			<div class="column">
 				<div class="album">
 					<p> Titulo</p>
-					<img src="../fotos/Maquinaria/ro-04.jpg" onclick="openModal(this)" class="hover-shadow cursor">
+					<img src="../fotos/Maquinaria/ro-04.jpg" alt="Maquinaria" onclick="openModal(this)" class="hover-shadow cursor">
 				</div>
 				<div class="album">
 					<p> Titulo</p>
@@ -112,6 +113,12 @@
 			<a href="">link 2</a>
 		</div>		
 	</footer>
-<script src="../js/lbox.js"></script>	
+<script src="../js/lbox.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function() {
+		document.body.style.opacity=1;
+	});
+</script>
 </body>
 </html>

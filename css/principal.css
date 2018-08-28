@@ -1,14 +1,6 @@
-body{
+
+body{	
 	font-family: 'PT Sans Narrow', sans-serif;	
-}
-#letrero{	
-	height: 150px;
-	padding: 1px;
-	text-align: center;
-}
-#letrero img,#letrero h1{
-	display: inline;	
-	vertical-align: middle;
 }
 h1{			
 	margin:0px;
@@ -19,11 +11,28 @@ h1{
 	position: relative;
 	height: 100%;		
 }
-h2{
+#letrero img,#letrero h1{
+	display: inline;	
+	vertical-align: middle;
+}
+
+#letrero{	
+	height: 150px;
+	padding: 1px;
 	text-align: center;
 }
 
+
+
+h2{
+	text-align: center;
+	margin: 10px auto 10px auto;
+	font-size: 40px;
+	border: 1px solid #1197F5;
+}
+
 nav{	
+	text-align: right;		
 	background: #157BBC;	
 }
 
@@ -52,21 +61,16 @@ li:hover{
 	animation: 0.7s pulse 1;	
 }
 section,footer,h3{
-	width:90%;	
+	width:100%;	
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px orange solid;
 }
 section{
-	
+	width: 100%;
 	display: flex;	
 }
 
-h3{
-	margin: 10px auto 10px auto;
-	font-size: 40px;
-	border: 1px solid #1197F5;
-}
 
 article,aside{
 	margin: 10px;
@@ -143,6 +147,7 @@ h2[title~="contienvalor"]{
 h2[title|="es"]{
 
 }
+
 
 
 
