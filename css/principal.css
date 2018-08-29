@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
 * {
 		    box-sizing: border-box;		  
 		}	
 body{	
-	font-family: 'PT Sans Narrow', sans-serif;	
+	/*font-family: 'PT Sans Narrow', sans-serif;	*/
+	 font-family: 'Rajdhani', sans-serif;
 }
 
 header{
@@ -64,10 +67,6 @@ nav a{
 	font-size: 30px;
 }
 
-
-li:hover{
-	animation: 0.7s pulse 1;	
-}
 
 h2{
 	text-align: center;
