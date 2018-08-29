@@ -1,17 +1,15 @@
-section{
+#galeria{
 	height:60vw;
 	position: relative;
-}		
-article{
-	height: 100%;
-}
+}	
+
 #collage{
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;		
 	margin: 0;			
 	padding: 0;
 	overflow: hidden;
-
 }
 .column{
 	flex:50%;
