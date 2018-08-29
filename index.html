@@ -7,37 +7,25 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/principal.css">
 	<link rel="icon" type="image/png" sizes=16x16 href="media otros/logoApia.png" />
-	<link rel="stylesheet" type="text/css" href="css/galeria.css">
-	<style type="text/css">
-		li:nth-child(1){
-			border-bottom: 5px solid #FFFFFF;
-		}
-		#about,#services{
-			width: 50%;				
-			display: inline-block;
-		}
-		#services{
-			text-align: right;
-		}
-	</style>
-	
+	<link rel="stylesheet" type="text/css" href="css/galeria.css">	
 </head>
-<body style="opacity: 0">
-	<header>		
+<body style="opacity:0">
+	<header id="myHeader">		
 	<div id="letrero" >					
 		<h1> Apia Proyectos y Soluciones S.A.S.</h1>
 		<img id=logo src="media otros/logoApia.png">
 	</div>	
 	<nav>
 		<ul>
-			<li><a href="">Inicio</a></li>
-			<li><a href="web/galeria.html">Galeria</a></li>
+			<li><a href="#inicio">Inicio</a></li>
+			<li><a href="#galeria">Galeria</a></li>
 			<li><a href="#">Contacto</a></li>
 		</ul>
 	</nav>
 	</header>	
-	<h2>Inicio</h2>
-	<section>		
+	
+	<section id="inicio">	
+		<h2>Inicio</h2>	
 		<article id="about">
 			<p>Apia proyectos y soluciones,
 			es una empresa con amplia trayectoria en el mercado de la construccion, conformada por un grupo interdiciplinario de profesionales orientados a prestar un servicio de alta calidad de las ramas de la ingeniería y la arquitectura abarcando el diseño, planeacion y ejecucion de actividades de construccion, consultoria e interventoria de obras civiles y arquitectonicas eficientemente y con responsabilidad social.
@@ -47,9 +35,9 @@
 			<p>Prestamos servicios de Ingenieria Arquitectura y alquiler de equipo en actividades como, estudio, planeacion interventoria, consultoria, direccion, asesoria, diseño, montaje, ejecucion de obras de Ingenieria y arquitectonicas, compra venta de maquinaria, respuestos  y suministros en general, bienes muebles e inmubles, vehiculos y la importancion y exporacion de asustos relacionados.				
 			</p>		
 		</article>
-	</section>
-	<h2>Galeria</h2>
-	<section id="galeria">			
+	</section>	
+	<section id="galeria">	
+		<h2>Galeria</h2>		
 		<article id="collage">
 			<div class="column">
 				<div class="album">
@@ -79,11 +67,30 @@
 			<a href="">link 2</a>
 		</div>		
 	</footer>	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-<script type="text/javascript">
-	$(document).ready(function() {
-		document.body.style.opacity=1;
-	});
+<script> 
+var delta= document.getElementById("myHeader").offsetHeight;
+
+
+$(document).on('click', 'a[href^="#"]', function (event) {	
+    $('li > a').removeClass();
+    $(this).addClass('active');    
+	event.preventDefault();
+	var elem=$(this).attr('href');
+	smooth_scroll_to(elem);
+});
+document.body.style.opacity=1;
+
+function smooth_scroll_to(elem)
+{
+    var offset = 0;
+    offset = $(elem).offset().top;
+    $('html, body').animate({
+        scrollTop: offset-delta
+    }, 550);
+}
+   
 </script>
 </body>
 </html>
