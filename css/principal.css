@@ -19,10 +19,9 @@ h1,h2,nav{
 	user-select: none;
 }
 nav{	
-	width: 450px;	
+	text-transform: uppercase;
 	vertical-align: middle;
 	text-align: right;	
-	
 }
 
 #letrero{	
