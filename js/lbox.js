@@ -1,12 +1,12 @@
 
 function openModal(e) {
-	document.getElementById("preview").src=e.src;
-  document.getElementById('myModal').style.display = "block";
-  showSlides(e);
+	document.getElementById("preview").src=e.src;	
+	document.getElementById('myModal').style.display = "block";
+	showSlides(e);
 }
 
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+	document.getElementById('myModal').style.display = "none";
 }
 
 

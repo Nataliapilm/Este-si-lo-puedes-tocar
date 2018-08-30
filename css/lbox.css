@@ -3,7 +3,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 30;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -21,7 +21,11 @@
   padding:0;
   position: relative;  
   border: 1px solid red;
-
+}
+@media screen and (max-width: 600px){  
+  .modal-content {
+    width: 90% ;
+  }
 }
 
 /* The Close Button */

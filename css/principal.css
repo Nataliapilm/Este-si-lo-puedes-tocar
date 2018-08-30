@@ -8,25 +8,47 @@ section,footer,footer a{
 	background: white;
 	color: black !important;;
 }
-
 header{
 	background: black;
 }
+li a:hover{
+	background: white;
+	color:black;	
+}
 h1, li a{
 	color: white;
-	/*text-shadow: 2px 2px 1px #000;*/
-	text-shadow:2px 2px 1px #000;
+	/*text-shadow: 2px 2px 1px #000;*/	
+}
+a{
+	cursor:pointer;
 }
 li a{
-	border: 0px solid white;
+	border: 0px solid black;
 }
-
-/*-----------------------*/
-
 body{	
 	/*font-family: 'PT Sans Narrow', sans-serif;	*/
 	 font-family: 'Rajdhani', sans-serif;
 }
+.previous{
+ 	display: inline-block;
+ 	padding: 10px 0px 0px 15px;	
+ 	float:left;
+ 	border-bottom: 2px solid transparent; 
+ 	float:left;
+ 	color:black;
+ 	text-shadow: none;
+ }
+ .previous:hover{
+ 	/* -------- */
+ 	border-bottom: 2px solid black; 
+ }
+ .previous:active{
+	transform: scale(1.2);
+ }
+
+/*-----------------------*/
+
+
 section{	
 	/*No tocar*/
 	padding-top:100px; 
@@ -47,9 +69,9 @@ h1,h2,nav{
 	user-select: none;
 }
 nav{
-	margin-top: auto;
-	margin-bottom: auto;	
-	height: 70%;		
+	margin:0;	
+	padding: 0;
+	height: 100%;		
 	text-transform: uppercase;	
 	text-align: right;	
 }
@@ -75,8 +97,8 @@ nav{
     font-size: 30px;   
     display: block;
     transition: 0.3s;
+    color:white;
 }
-
 
 .sidenav .closebtn {
     position: absolute;
@@ -84,6 +106,10 @@ nav{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+i {
+	font-style: normal;
 }
 
 #letrero{	
@@ -110,11 +136,13 @@ ul{
 	border: 1px solid green;
 	height: 100%;
 	padding: 0;
+	margin:0;
 }
 li{
+	top:0px;
 	display: inline-block;	
 	height: 100%;	
-	margin-right: 15px;		
+				
 	position: relative;
 }
 .active{
@@ -125,15 +153,12 @@ li a{
 	display: block;		
 	text-decoration: none;		
 	font-weight: bold;	
-	
-
-	/* AQUI */
+	padding: 10px;
+	padding-top:30px;
+		/* AQUI */
 	font-size: 30px;
 }
 
-#mySidenav a{
-	color:white;
-}
 
 
 h2{
@@ -148,8 +173,7 @@ section,footer,h3{
 	border: 1px orange solid;
 }
 
-article{
-	
+article{	
 	margin: 10px;
 	font-size: 30px;	
 	position: relative;		
@@ -187,22 +211,24 @@ footer{
 	}
 }
 @media screen and (max-width: 900px){
+	#letrero i{
+		display:none !important;
+	}
+}
+@media screen and (max-width: 700px){
 	
 	#botonMenuMovil{		
-		display: inline-block;			
-		margin-top: auto;
-		margin-bottom: auto;	
-		height: 70%;			
-		padding-top: 10px;	
+		display: inline-block;				
+		height: 100%;	
+	}
+	#botonMenuMovil{
+		margin-top:-4px;
 	}
 
 	nav{
 		display: none !important;
 		margin: 0 !important;
-	}
-	#letrero span{
-		display:none !important;
-	}
+	}	
 }
 
 
