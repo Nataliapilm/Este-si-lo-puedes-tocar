@@ -171,7 +171,7 @@ footer{
 		font-size: 25px;
 	}
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
 	
 	#botonMenuMovil{		
 		display: inline-block;
