@@ -1,10 +1,8 @@
 #galeria{
-	height: 110vw;
+	height: 100vw;
 	position: relative;
 }	
-.smaller{
-	height: 20%;
-}
+
 #collage{	
 	position: relative;
 	display: flex;
@@ -15,11 +13,12 @@
 	height: 90%;
 }
 .column{
-	width: 100%;
+	width: 100%;	
 	display: flex;	
 	padding: 0;			
 }			
 .column img{
+	height: 100%;
 	vertical-align: middle;						
 	transition: all 1s ease;			
 }
