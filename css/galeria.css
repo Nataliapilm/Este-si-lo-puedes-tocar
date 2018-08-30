@@ -1,15 +1,16 @@
 #galeria{
-	
+	height: 70vw;
 	position: relative;
 }	
 
-#collage{
-	height: 100%;
+#collage{	
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;		
 	margin: 0;			
 	padding: 0;
-	overflow: hidden;
+	overflow: hidden;	
+	height: 90%;
 }
 .column{
 	flex:50%;
@@ -36,14 +37,15 @@
     color:white;
     z-index: 1;
     padding: 10px;
-    background-color: rgba(0,0,0,0.5);
-   
+    background-color: rgba(0,0,0,0.5);   
 }
 #last{
 	top:15%;			
 }	
 @media screen and (max-width: 1100px){
-
+	#galeria{
+		height: auto;
+	}
 	.column{
 		flex:100%;
 		max-width: 100%;
