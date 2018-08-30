@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
-
 * {
 	box-sizing: border-box;	
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }	
+/*------- Colores base ----------------*/
+section,footer,footer a{
+	background: white;
+	color: black !important;;
+}
+
+header{
+	background: black;
+}
+h1, li a{
+	color: white;
+	/*text-shadow: 2px 2px 1px #000;*/
+	text-shadow:2px 2px 1px #000;
+}
+li a{
+	border: 0px solid white;
+}
+
+/*-----------------------*/
+
 body{	
 	/*font-family: 'PT Sans Narrow', sans-serif;	*/
 	 font-family: 'Rajdhani', sans-serif;
@@ -13,9 +32,7 @@ section{
 	padding-top:100px; 
 	border: 1px red solid;
 }
-#inicio{	
-	
-}
+
 
 header{
 	position: fixed;
@@ -24,8 +41,7 @@ header{
 	height: 100px;	
 	display: flex;	
 	vertical-align: middle;
-	justify-content: space-between;
-	background:  #141414;
+	justify-content: space-between;	
 }
 h1,h2,nav{
 	user-select: none;
@@ -61,9 +77,6 @@ nav{
     transition: 0.3s;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
 
 .sidenav .closebtn {
     position: absolute;
@@ -90,8 +103,7 @@ h1{
 	margin-left: 30px;
 	padding: 0px;
 	font-size: 30px;	
-	color:white;
-	text-shadow: 2px 2px 1px #000;
+	
 }
 ul{			
 	position: relative		
@@ -111,11 +123,10 @@ li{
 li a{	
 	height: 100%;
 	display: block;		
-	text-decoration: none;
-	color:white;
-	border: 0px solid white;
+	text-decoration: none;		
 	font-weight: bold;	
-	text-shadow: 2px 2px 1px #000;
+	
+
 	/* AQUI */
 	font-size: 30px;
 }
@@ -155,9 +166,6 @@ article>p{
 footer{
 	text-align: center;
 	border: 1px solid #D91BE5;
-}
-
-footer{
 	margin:10px auto 10px auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
