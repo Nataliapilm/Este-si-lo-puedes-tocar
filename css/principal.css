@@ -8,14 +8,11 @@ body{
 	 font-family: 'Rajdhani', sans-serif;
 }
 section{
-	
+	padding-top:60px;
 	border: 1px red solid;
 }
-#inicio{
-	
-	display: block;
-	padding: 15px;
-	padding-top:60px;
+#inicio{	
+	display: block;	
 }
 
 header{
