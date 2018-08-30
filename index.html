@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/png" sizes=16x16 href="media otros/logoApia.png" />
 	<link rel="stylesheet" type="text/css" href="css/galeria.css">	
 </head>
-<body style="opacity:0">
+<body >
 	<header id="myHeader">		
 	<div id="letrero" >					
 		<h1> Apia Proyectos y Soluciones S.A.S.</h1>
@@ -17,8 +17,8 @@
 	</div>	
 	<nav>
 		<ul>
-			<li><a href="#inicio">Inicio</a></li>
-			<li><a href="#galeria">Galeria</a></li>
+			<li><a id="i" href="#inicio">Inicio</a></li>
+			<li><a id="g" href="#galeria">Galeria</a></li>
 			<li><a href="#">Contacto</a></li>
 		</ul>
 	</nav>
@@ -73,20 +73,24 @@
 var delta= document.getElementById("myHeader").offsetHeight;
 
 
-$(document).on('click', 'a[href^="#"]', function (event) {	
-    $('li > a').removeClass();
-    $(this).addClass('active');    
-	event.preventDefault();
+$("a").click(function () {		
+    $(this).animate({
+        'borderBottomWidth':"7px"
+    }, 500);
+     $(this).animate({
+        'borderBottomWidth':"0px"
+    }, 500);
+
 	var elem=$(this).attr('href');
 	smooth_scroll_to(elem);
 });
-document.body.style.opacity=1;
+
 
 function smooth_scroll_to(elem)
 {
     var offset = 0;
     offset = $(elem).offset().top;
-    $('html, body').animate({
+    $('html').animate({
         scrollTop: offset-delta
     }, 550);
 }
