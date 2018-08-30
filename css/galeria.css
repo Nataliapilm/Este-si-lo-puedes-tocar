@@ -44,16 +44,25 @@
 #last{
 	top:15%;			
 }	
+
+@media screen and (max-width: 1200px){
+	.album img{
+		margin-left: -100px;		
+	}
+}
+
 @media screen and (max-width: 600px){
 	#collage,.column{
 		display: block !important;
 		height: auto !important;
-	}
+	}	
 	.album{
-		width: 100%;
-		max-height: 200px; 
+		max-height: 100px;
+		width: 100%;		
 	}
 	.album img{
-		width: 100%;
+		width: 100%;	
+		margin:0;	
+		margin-top: -50px;
 	}
 }
