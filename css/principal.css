@@ -5,18 +5,20 @@
 }	
 /*------- Colores base ----------------*/
 section,footer,footer a{
-	background: white;
-	color: black !important;;
+	background: black;
+	color: white !important;;
 }
 header{
-	background: black;
+	height: 100px;
+	background : white;	
+	box-shadow: inset 0px -10px 40px -10px rgba(0,0,0,1);
 }
 li a:hover{
-	background: white;
-	color:black;	
+	background: black;
+	color:white;	
 }
 h1, li a{
-	color: white;
+	color: black;
 	/*text-shadow: 2px 2px 1px #000;*/	
 }
 a{
