@@ -1,11 +1,13 @@
 #galeria{	
 	position: relative;
+
 }	
 
 #collage{	
 	position: relative;			
 	overflow: hidden;	
 	height: 70vw;
+	margin:0;
 }
 .column{
 	position: relative;
@@ -59,11 +61,6 @@
 }
 
 
-@media screen and (max-width: 1200px){
-	.album img{
-			
-	}
-}
 
 @media screen and (max-width: 600px){
 	.column{
@@ -76,6 +73,14 @@
 	}
 	.album img{
 		width: 100%;	
-		margin:0;			
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: -25%;
+	}
+	#collage{
+		height: auto !important;
+	}
+	.album p{
+		font-size: 25px;
 	}
 }

@@ -19,10 +19,9 @@
   margin: auto;
   width: 60%;
   padding:0;
-  position: relative;  
-  border: 1px solid red;
+  position: relative;   
 }
-@media screen and (max-width: 600px){  
+@media screen and (max-width: 1000px){  
   .modal-content {
     width: 90% ;
   }
@@ -58,8 +57,7 @@
   background-color: black;
   
   padding: 2px 16px;
-  color: white; 
-  border : 1px solid orange;  
+  color: white;  
    
 }
 .mySlides img{
