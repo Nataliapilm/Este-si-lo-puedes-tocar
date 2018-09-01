@@ -2,16 +2,20 @@
 <html lang="es">
 <head>
 	<title>Galeria Parques |Apia Proyectos</title>
+	
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 	
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/principal.css">
+
 	<link rel="icon" type="image/png" sizes=16x16 href="../media otros/logoApia.png" />
 	<link rel="stylesheet" type="text/css" href="../css/visor.css">	
 	<link rel="stylesheet" href="../css/lbox.css">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 
 </head>
+
+
 <body >
 <header id="myHeader">	
 <li id="botonMenuMovil"style="font-size:30px;cursor:pointer" onclick="openNav()">
@@ -36,12 +40,14 @@
   <a href="../index.html#contacto" class="anchor" onclick="closeNav()">Contacto</a>
 </div>
 </header>	
+
+
+<!----------------------------CONTENIDO ----------------------------->
 	<section id="galeria">	
 		<li><a href="../index.html#galeria" class="previous">&laquo; Volver a Galeria</a></li>
 		<h2>Galeria | Parques</h2>		
 		<article id="collage">
-			
-							
+			<!--GENERADO CON JS-->							
 		</article>		
 	</section>	
 	<footer>
@@ -62,7 +68,21 @@
 	  </div>
 	</div>
 
+<!---------------------------FIN DE CONTENIDO------------------------>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides" id="principal">      
+      <img id="preview" src="" style="width:100%">
+    </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
 <script src="../js/visor-and-lbox.js"></script>
+<script src="../js/principal.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
